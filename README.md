@@ -1,11 +1,15 @@
-![lein dependency](https://clojars.org/org.flatland/ordered/latest-version.svg)
+<!-- ![lein dependency](https://clojars.org/org.flatland/ordered/latest-version.svg) -->
+
+# ordered-cljs
+
+A ClojureScript fork of [org.flatland/ordered](https://github.com/amalloy/ordered).
 
 ordered provides sets and maps that maintain the insertion order of their contents.
 
 ## Sets
 
 ```clojure
-(use 'flatland.ordered.set)
+(require '[flatland.ordered.set :refer [ordered-set]])
 
 (ordered-set 4 3 1 8 2)
 => #ordered/set (4 3 1 8 2)
@@ -33,7 +37,7 @@ ordered provides sets and maps that maintain the insertion order of their conten
 ## Maps
 
 ```clojure
-(use 'flatland.ordered.map)
+(require '[flatland.ordered.map :refer [ordered-map]])
 
 (ordered-map :b 2 :a 1 :d 4)
 => #ordered/map ([:b 2] [:a 1] [:d 4])
@@ -58,18 +62,6 @@ ordered provides sets and maps that maintain the insertion order of their conten
 => #ordered/map ([:a 1] [:d 4] [:b 7])
 ```
 
-## ClojureScript
+## Test
 
 Tests require PhantomJS.
-
-
-## Repositories
-
-These two repositories are usually identical:
-
-* https://github.com/amalloy/ordered
-* https://github.com/flatland/ordered
-
-The first is the canonical one.  Fixes tend to appear there first, and
-that is the preferred repository for filing issues on Github.  Fixes
-are backported to the second one periodically.
