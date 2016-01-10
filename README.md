@@ -2,7 +2,7 @@
 
 # ordered-cljs
 
-A ClojureScript fork of [org.flatland/ordered](https://github.com/amalloy/ordered).
+A ClojureScript implementation of [org.flatland/ordered](https://github.com/amalloy/ordered).
 
 ordered provides sets and maps that maintain the insertion order of their contents.
 
